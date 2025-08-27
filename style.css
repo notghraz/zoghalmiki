@@ -1,9 +1,9 @@
-/* فونت کلی */
+/* فونت و تنظیمات پایه */
 body {
   margin: 0;
-  font-family: tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
   direction: rtl;
-  background: #f8f8f8;
+  background:  url('assets/logo.png');
   color: #333;
 }
 
@@ -23,7 +23,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 40px;
+  width: 50px; /* اندازه لوگو */
   margin-left: 10px;
 }
 
@@ -41,13 +41,14 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
 /* بنر */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: url('assets/banner.jpg') no-repeat center center/cover;
+  background: url('assets/banner.gif') no-repeat center center/cover; /* بنر GIF */
   color: white;
 }
 
@@ -64,9 +65,15 @@ header nav ul li a {
 .btn {
   background: #e63946;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d62828;
 }
 
 /* فوتر */
@@ -74,6 +81,6 @@ footer {
   background: #222;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 20px;
 }
