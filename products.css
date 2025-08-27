@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: tahoma, sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* بخش محصولات */
+.products-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ff4500; /* نارنجی-قرمز */
+}
+
+/* گرید محصولات */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* کارت محصول */
+.product-card {
+  background: #2b2b2b;
+  border: 2px solid #ff4500;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #ff4500;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* دکمه مشاهده */
+.product-card .btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff4500;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.product-card .btn:hover {
+  background: #ff6f33;
+}
+
+/* انیمیشن هاور کارت */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
+
+/* دکمه بازگشت به صفحه اصلی */
+.back-button {
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  background: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.back-button a:hover {
+  background: #ff6f33;
+}

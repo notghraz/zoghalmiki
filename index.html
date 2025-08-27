@@ -3,37 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>زغال میکائیل | فروشگاه آنلاین</title>
+  <title>زغال میکائیل | صفحه اصلی</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- هدر -->
-  <header>
+  <header class="header-bg">
     <div class="logo">
-      <img src="assets/logoye.png.png" alt="لوگو زغال میکی">
-      <h1>زغال میکائیل</h1>
+      <!-- لوگو لینک به صفحه اصلی -->
+      <a href="index.html">
+        <img src="assets/logoye.png.png" alt="لوگو زغال میکائیل">
+      </a>
     </div>
+
+    <!-- دکمه منوی موبایل -->
+    <div class="menu-toggle">☰</div>
+
     <nav>
       <ul>
-        <li><a href="#">صفحه اصلی</a></li>
-        <li><a href="#">محصولات</a></li>
-        <li><a href="#">سفارش</a></li>
-        <li><a href="#">درباره ما</a></li>
-        <li><a href="#">تماس با ما</a></li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="products.html">محصولات</a></li>
+        <li><a href="#order">سفارش</a></li>
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#contact">تماس با ما</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- بنر -->
   <section class="hero">
-    <h2>به فروشگاه آنلاین زغال میکائیل خوش آمدید</h2>
-    <p>سریع‌ترین راه خرید زغال با کیفیت</p>
-    <a href="#" class="btn">مشاهده محصولات</a>
+    <div class="hero-content">
+      <h1>به فروشگاه آنلاین زغال میکائیل خوش آمدید</h1>
+      <p>عرضه‌کننده بهترین زغال‌های خوزستان، بدون جرقه و با کیفیت بالا</p>
+      <a href="products.html" class="btn">مشاهده محصولات</a>
+    </div>
   </section>
+
+  <!-- پیش‌نمایش محصولات -->
+  <section class="preview-products">
+    <h2>چند محصول منتخب</h2>
+    <div class="products-container">
+      <div class="product-card">
+        <img src="assets/product1.jpg" alt="محصول 1">
+        <h3>محصول 1</h3>
+        <p>توضیح کوتاه درباره محصول 1</p>
+        <a href="products.html" class="btn">مشاهده</a>
+      </div>
+      <div class="product-card">
+        <img src="assets/product2.jpg" alt="محصول 2">
+        <h3>محصول 2</h3>
+        <p>توضیح کوتاه درباره محصول 2</p>
+        <a href="products.html" class="btn">مشاهده</a>
+      </div>
+      <div class="product-card">
+        <img src="assets/product3.jpg" alt="محصول 3">
+        <h3>محصول 3</h3>
+        <p>توضیح کوتاه درباره محصول 3</p>
+        <a href="products.html" class="btn">مشاهده</a>
+      </div>
+       <div class="product-card">
+        <img src="assets/product2.jpg" alt="محصول4">
+        <h4>محصول 4</h4>
+        <p>توضیح کوتاه درباره محصول 4</p>
+        <a href="products.html" class="btn">مشاهده</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- درباره ما -->
+<section id="about" class="about-section">
+  <h2 style="text-align: center; margin-bottom: 15px;">درباره ما</h2>
+  <div class="about-box" style="text-align: center; max-width: 700px; margin: 0 auto;">
+    <p>
+      فروشگاه زغال میکائیل از سال ۱۳۹۰ فعالیت خود را آغاز کرده است.  
+      تخصص ما تهیه و تولید بهترین زغال‌های طبیعی از چوب درختان مرغوب خوزستان است.  
+      زغال‌های ما بدون جرقه، با حرارت بالا و مناسب برای قلیان و کباب هستند.
+    </p>
+  </div>
+</section>
 
   <!-- فوتر -->
   <footer>
     <p>© 2025 زغال میکائیل - تمامی حقوق محفوظ است</p>
   </footer>
+
+  <!-- اسکریپت منوی موبایل -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    toggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
